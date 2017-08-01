@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Angular Login App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale = 1.0, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="myPulse">
+  
+  <!-- build:css styles/vendor.css -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="assets/mobirise/css/style.css"> -->
+  <!-- <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css"> -->
+  <!-- <link rel="stylesheet" href="assets/mobirise-slider/style.css"> -->
+  <link rel="stylesheet" href="assets/ishan/custom.css" type="text/css">
+  <!-- <link rel="stylesheet" href="../bower_components/angular-ui-select/dist/select.css" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" href="components/angular-chart.js/dist/angular-chart.css" /> -->
+  <!-- <link rel="stylesheet" href="components/angular-color-picker/colorpicker.min.css"> -->
+  <!-- endbuild -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body ontouchstart="">
+  <div id="content-area" ui-view=""></div>
+  <script type="text/javascript" src="components/jquery/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  if (typeof angular == 'undefined') {
+    document.write(unescape("%3Cscript src='components/angular/angular.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+  <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="components/angular-sanitize/angular-sanitize.min.js"></script>
+  <!-- charts -->
+  <!-- build:js scripts/vendor.js -->
+  <script src="components/bootstrap/js/bootstrap.min.js"></script>
+  
+  <!-- endbuild -->
+  <script src="main.js"></script>
+</body>
+
+</html>

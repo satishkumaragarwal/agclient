@@ -1,0 +1,18 @@
+<loader ng-show="!settings.contentLoaded"></loader>
+<div ng-show="settings.contentLoaded">
+    <form novalidate class="simple-form">
+        <label>ID: <input type="text" ng-model="user.ID" /></label><br />
+        <label>FirstName: <input type="text" ng-model="settings.user.FirstName" /></label><br />
+        <label>LastName: <input type="text" ng-model="settings.user.LastName" /></label><br />
+        <label>Phone Number: <input type="text" ng-model="settings.user.PhoneNumber" /></label><br />
+        <label>E-mail: <input type="email" ng-model="settings.user.EmailAddress" /></label><br />
+        <label>StreetAddress: <input type="text" ng-model="settings.user.StreetAddress" /></label><br />
+        <label>City: <input type="text" ng-model="settings.user.City" /></label><br />
+        <label>State: <input type="text" ng-model="settings.user.State" /></label><br />
+        <label>Country: <input type="text" ng-model="settings.user.Country" /></label><br />
+        <label>Zipcode: <input type="text" ng-model="settings.user.Zipcode" /></label><br />
+        <label>Notes: <input type="text" ng-model="settings.user.Notes" /></label><br />
+        <!--<input type="button" ng-click="reset()" value="Reset" />-->
+        <input type="submit" ng-click="settings.update(user)" value="Save" />
+    </form>
+</div>

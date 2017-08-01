@@ -1,0 +1,12 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h3>TMS.AddressBook- {{home.username}}</h3>
+    </div>
+    <ul class="nav navbar-nav" ng-repeat="menu in home.menuList">
+      <li class=""><a ng-click="home.menuItemClick(menu.id)">{{menu.label}}</a></li>
+    </ul>
+  </div>
+</nav>
+<div ui-view="" class="body-content">
+</div>

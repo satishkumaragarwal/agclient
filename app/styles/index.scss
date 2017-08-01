@@ -1,0 +1,16 @@
+@import 'custom.scss';
+@import 'settings.scss';
+@import 'loading.scss';
+@import 'dashboard.scss';
+html * :not(i){
+    font-family: open sans !important;
+}
+
+@media screen and (max-width: 767px){
+	.pagination{
+		font-size: 12px;
+	}
+	.pagination-first, .pagination-last{
+		display: none !important;
+	}
+}
