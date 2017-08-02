@@ -1,2 +1,31 @@
 <loader ng-show="!dashboard.contentLoaded"></loader>
-<div ng-show="dashboard.contentLoaded">DASHBOARD content</div>
+<div ng-show="dashboard.contentLoaded">
+    <table class="table">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Email Address</th>
+            <th>Street Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Zipcode</th>
+            <th>Notes</th>
+            <th>Delete</th>
+        </tr>
+        <tr ng-repeat="contact in dashboard.Contacts">
+            <td>{{contact.FirstName}}</td>
+            <td>{{contact.LastName}}</td>
+            <td>{{contact.PhoneNumber}}</td>
+            <td>{{contact.EmailAddress}}</td>
+            <td>{{contact.StreetAddress}}</td>
+            <td>{{contact.City}}</td>
+            <td>{{contact.State}}</td>
+            <td>{{contact.Country}}</td>
+            <td>{{contact.Zipcode}}</td>
+            <td>{{contact.Notes}}</td>
+            <td><input type="button" class="glyphicon glyphicon-remove-circle" ng-click="dashboard.remove(contact)"/></td>
+        </tr>
+    </table>
+</div>

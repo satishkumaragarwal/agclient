@@ -1,7 +1,7 @@
 <loader ng-show="!settings.contentLoaded"></loader>
 <div ng-show="settings.contentLoaded">
     <form novalidate class="simple-form">
-        <label>ID: <input type="text" ng-model="user.ID" /></label><br />
+        <label>ID: <input type="text" ng-model="settings.user.ID" /></label><br />
         <label>FirstName: <input type="text" ng-model="settings.user.FirstName" /></label><br />
         <label>LastName: <input type="text" ng-model="settings.user.LastName" /></label><br />
         <label>Phone Number: <input type="text" ng-model="settings.user.PhoneNumber" /></label><br />
@@ -13,6 +13,6 @@
         <label>Zipcode: <input type="text" ng-model="settings.user.Zipcode" /></label><br />
         <label>Notes: <input type="text" ng-model="settings.user.Notes" /></label><br />
         <!--<input type="button" ng-click="reset()" value="Reset" />-->
-        <input type="submit" ng-click="settings.update(user)" value="Save" />
+        <input type="submit" ng-click="settings.update(settings.user)" value="Save" />
     </form>
 </div>

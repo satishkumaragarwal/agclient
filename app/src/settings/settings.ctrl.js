@@ -9,9 +9,10 @@ angular.module('myApp.settings').controller('SettingsCtrl', ['$scope','$timeout'
   }, 200);
 
   this.update = function(user){
-    $http.post('http://localhost:49684/api/contacts', user)
+    $http.post('http://localhost:49684/api/contacts', JSON.stringify(user))
     .success(function(data){
-      console.log(data);
+      alert("Contacts saved!");
+      self.user = {};
     })
     .error(function(err){
       console.log(err);
